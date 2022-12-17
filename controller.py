@@ -1,4 +1,3 @@
-
 def choice():
     return input("Ввод:  ")
 

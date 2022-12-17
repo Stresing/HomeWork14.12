@@ -17,7 +17,6 @@ def choice_result():
         view.error_num_comm()
 
 
-
 def search_contact():
     search_two_name = contr.two_name()
     search_two_name = search_two_name.title()
@@ -32,10 +31,6 @@ def search_contact():
         view.contact_fail(search_two_name)
 
 
-
-
-
-
 def add_contact():
     first_name = contr.add_name()
     first_name = first_name.title()
@@ -47,6 +42,7 @@ def add_contact():
     file = open(file_name, "a", encoding='utf-8')
     file.write(contact)
     view.comp_add_contact(contact)
+
 
 def check_cont():
     if contr.pro_continue() == 4:
